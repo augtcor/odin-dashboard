@@ -6,14 +6,92 @@
 body {
     height: 100vh;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.6fr 1fr 1fr 1fr;
+    grid-template-columns: 0.9fr 1.2fr 1.2fr 1.2fr;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
     grid-row: 1 / 2;
     grid-column: 2 / -1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 3px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+}
+
+.searchbar {
+    background-color: rgb(231, 229, 229);
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+}
+
+.search-icon {
+    height: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.notifications {
+    display: flex;
+}
+
+.notification-icon {
+    height: 1.5rem;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    height: 60px;
+    margin-left: -0.3rem;
+}
+
+.greeting {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.greeting1 {
+    font-size: 0.7rem;
+}
+
+.greeting2 {
+    font-size: 1.2rem;
+}
+
+.button {
+    margin-left: 1rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    background-color: #2B86C5;
+    color: white;
+    font-weight: 600;
 }
 
 .sidebar {
@@ -26,7 +104,11 @@ body {
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);    
     color: white;
-    /* max-width: 15rem; */
+    max-width: 20rem;
+}
+
+.sidebar {
+    padding-top: 1.2rem;
 }
 
 .links {
@@ -36,10 +118,20 @@ body {
 
 .icon {
     height: 1.5rem;
+    margin-right: 1.8rem;
+}
+
+.logo {
+    height: 2.5rem;
     margin-right: 1rem;
+    margin-left: -0.4rem;
 }
 
 .main {
     grid-row: 2 / -1;
     grid-column: 2 / -1;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: aliceblue;
 }
